@@ -39,7 +39,7 @@
     .hero-copy > p:not(.eyebrow) { max-width:610px; color:var(--muted); font-size:1.15rem; }
     .hero-copy { min-width:0; }
     .tags { display:grid; grid-template-columns:minmax(0, 1fr); gap:12px; margin:28px 0 29px; }
-    .tag { display:block; min-width:0; width:100%; border:1px solid #d7afb6; border-radius:16px; padding:16px 20px; color:var(--terracotta); background:#fff8f3; font-size:.88rem; font-weight:700; line-height:1.8; word-break:keep-all; overflow-wrap:anywhere; }
+    .tag { display:block; min-width:0; width:100%; border:1px solid #d7afb6; border-radius:16px; padding:16px 20px; color:var(--terracotta); background:#fff8f3; font-size:.88rem; font-weight:700; line-height:1.8; word-break:keep-all; overflow-wrap:normal; }
     .actions { display:flex; flex-wrap:wrap; gap:12px; }
     .button { display:inline-flex; align-items:center; justify-content:center; min-height:50px; border:1px solid transparent; border-radius:9px; padding:0 21px; background:var(--terracotta); color:#fff; font-weight:700; font-size:.95rem; cursor:pointer; transition:transform .18s, background .18s; }
     .button:hover { transform:translateY(-2px); background:#703440; }
@@ -59,10 +59,13 @@
     .course-grid { display:grid; min-width:0; grid-template-columns:1fr; gap:14px; }
     .course { display:flex; flex-direction:column; min-width:0; min-height:0; padding:28px 30px; border:1px solid #eecfc4; border-radius:var(--radius); background:#fff9f5; color:#4d302a; }
     .course-number { color:var(--terracotta); font-weight:850; font-size:.83rem; }
-    .course h3 { font-size:1.42rem; line-height:1.35; letter-spacing:-.04em; margin:12px 0 11px; }
+    .course h3 { font-size:1.42rem; line-height:1.35; letter-spacing:-.04em; margin:12px 0 11px; word-break:keep-all; overflow-wrap:normal; }
     .course > p { color:#70534b; margin-bottom:23px; }
     .course dl { margin:auto 0 0; border-top:1px solid var(--line); padding-top:17px; }
     .course dl div { display:flex; gap:10px; margin:6px 0; font-size:.88rem; }
+    .course-action { align-self:flex-start; min-height:40px; margin-top:20px; padding:0 15px; border-color:#cdaeb2; color:#4d302a; background:transparent; font-size:.84rem; }
+    .course-action:hover { background:#f5dfd1; }
+    .course-action + .course-action { margin-top:9px; }
     dt { flex:0 0 48px; color:#85665d; } dd { min-width:0; margin:0; overflow-wrap:break-word; font-weight:700; }
     .custom { display:grid; grid-template-columns:.86fr 1.14fr; gap:65px; align-items:center; margin-top:46px; padding:45px; border-radius:var(--radius); background:var(--navy); color:#fff; }
     .custom h2 { color:#fff9f5; margin-bottom:13px; } .custom .lead { color:#ead8d0; }
@@ -99,15 +102,15 @@
   </style>
 </head>
 <body>
-  <header class="site-header"><div class="wrap nav"><a class="brand" href="#top">KIM <span>EUNJUNG</span></a><nav aria-label="주요 메뉴"><a href="#profile">강사 이력</a><a href="#courses">대표 과정</a><a href="#custom">맞춤 설계</a></nav></div></header>
+  <header class="site-header"><div class="wrap nav"><a class="brand" href="#top">KIM <span>EUN JEONG</span></a><nav aria-label="주요 메뉴"><a href="#profile">강사 이력</a><a href="#courses">대표 과정</a><a href="#custom">맞춤 설계</a></nav></div></header>
   <main id="top">
     <section class="hero"><div class="wrap hero-grid">
-      <div class="hero-copy"><p class="eyebrow">CHILD & YOUTH EDUCATION</p><h1>지속가능한 성장 설계자<br><em>마음·손끝·미래를 잇는 교육</em></h1><p>아동·청소년의 발달 단계에 맞춰 마음의 성장에서 손끝의 창의, 미래의 진로까지 이어지는 통합 성장 프로그램을 설계·운영합니다.</p><div class="tags" aria-label="교육 대상"><span class="tag">학교현장 및 학교 밖 초· 중· 고등학생<br>&lt;관계소통프로그램&gt; &lt;업사이클링 팝업북코딩프로그램(준비중)&gt;</span><span class="tag">특수교육 대상 초· 중· 고등학생<br>&lt;자존감 up-AI융합에듀테크 프로그램 :<br>&quot;Do-it!Do-it!&quot;,<br>&quot;팝업북속으로 떠나는 VR콘텐츠 <span style="white-space:nowrap">창작여행</span>(준비중)&quot;&gt;</span><span class="tag">취업을 준비하는 특수학교 고등학생<br>&lt;취업 준비 프로그램 &quot;Retrn to Wheel-master&quot;&gt;</span><span class="tag">진로의 방향과 구체적 대안을 찾는 고등· 대학생<br>&lt;진로·취업·모의면접 프로그램 : &quot;AI-noteme&quot;&gt;</span></div><div class="actions"><a class="button js-pdf" href="#download">소개 자료 받기</a><a class="button ghost" href="#courses">대표 과정 보기</a></div></div>
+<div class="hero-copy"><p class="eyebrow">CHILD & YOUTH EDUCATION</p><h1>지속가능한 성장 설계자<br><em>마음·손끝·미래를 잇는 교육</em></h1><p>아동·청소년의 발달 단계에 맞춰 마음의 성장에서 손끝의 창의, 미래의 진로까지 이어지는 통합 성장 프로그램을 설계·운영합니다.</p><div class="tags" aria-label="교육 대상"><span class="tag">학교현장 및 학교 밖 초· 중· 고등학생<br>&lt;관계소통프로그램&gt;<br>&lt;업사이클링 팝업북-코딩 프로그램 (준비중)&gt;</span><span class="tag">특수교육 대상 초· 중· 고등학생<br>&lt;자존감 UP! AI융합 에듀테크 프로그램&gt;<br>&quot;나의 행동이 AI가 되는 Do - it! Do - it!! VR마법교실&quot;<br>&quot;팝업북 속으로 떠나는 VR 컨텐츠 창작여행&quot; (준비중)</span><span class="tag">취업을 준비하는 특수학교 고등학생<br>&lt;취업준비 VR프로그램&gt;<br>&quot;Return to Wheel-master&quot;</span><span class="tag">진로의 방향과 구체적 대안을 찾는 고등· 대학생<br>&lt;진로· 취업· 모의면접 프로그램&gt;<br>&quot;AI - note me&quot;</span></div><div class="actions"><a class="button js-pdf" href="output/pdf/kimeunjeong-education-introduction-2026.pdf" target="_blank" rel="noopener">소개 자료 받기</a><a class="button ghost" href="#courses">대표 과정 보기</a></div></div>
       <div class="profile"><img class="profile-photo" src="assets/education-workshop.jpg" alt="교육 현장에서 워크숍을 진행하는 모습"></div>
     </div></section>
     <section id="profile"><div class="wrap credibility"><div><p class="eyebrow">EXPERIENCE & TRUST</p><h2>현장에서 검증한<br>교육의 언어</h2><p class="lead">아동청소년 소통·리더십·진로교육 강사로서, 배움을 ‘실행하는 것’으로 바꾸는 순간을 만들어 왔습니다.</p><div class="stats"><div class="stat"><strong>6년+</strong><span>학교 교육·프로그램 개발 경력</span></div><div class="stat"><strong>4.8 / 5</strong><span>최근 교육 만족도 평균</span></div><div class="stat"><strong>100회+</strong><span>리더십, 소통교육,<br>진로·취업교육 진행</span></div><div class="stat"><strong>120회+</strong><span>에듀테크교육</span></div><div class="stat"><strong>35개+</strong><span>학교·교육기관 협업</span></div></div></div>
       <div><h3 style="font-size:1.15rem;margin:7px 0 10px">주요 이력</h3><p class="lead">아동청소년 소통·리더십 강사<br>진로·취업교육 강사<br>AI융합에듀테크 강사</p><h3 style="font-size:1.15rem;margin:29px 0 10px">학교 교육 사례</h3><div class="school-cases" aria-label="학교 교육 사례">
-  <div class="school-group"><div class="logos"><span class="logo">서초구 반원초등학교</span><span class="logo">금천구 금나래초등학교</span><span class="logo">구로구 고척초등학교</span></div></div>
+  <div class="school-group"><div class="logos"><span class="logo">서초구 반원초등학교</span><span class="logo">영등포구 신영초등학교</span><span class="logo">구로구 고척초등학교</span></div></div>
   <div class="school-group"><div class="logos"><span class="logo">용인 성지중학교</span><span class="logo">도봉구 정의여자중학교</span></div></div>
   <div class="school-group"><div class="logos"><span class="logo">강남구 진선여자고등학교</span><span class="logo">중랑구 이화미디어고등학교</span><span class="logo">강원애니메이션고등학교</span><span class="logo">춘천기계공업고등학교</span></div></div>
   <div class="school-group"><div class="logos"><span class="logo">성균관대학교</span></div></div>
@@ -115,19 +118,15 @@
     </div></section>
     <section class="courses" id="courses"><div class="wrap courses-layout"><div class="section-head"><p class="eyebrow">SIGNATURE PROGRAMS</p><h2>가장 필요한 변화를 시작합니다.</h2><p class="lead">대표 과정은 명확한 기준점이 됩니다. 구성원의 역할과 교육 목표에 맞춰 깊이와 방식은 유연하게 조정합니다.</p></div>
       <div class="course-grid">
-        <article class="course"><span class="course-number">01</span><h3>마음 성장</h3><p>관계와 감정을 다루는 힘을 기릅니다. 사회성·소통·인성 활동을 통해 자신을 표현하고 친구와 연결되는 경험을 만듭니다.</p><dl><div><dt>추천 대상</dt><dd>유아, 초등학생, 중학생</dd></div><div><dt>기대 효과</dt><dd>1:1 면담과 피드백 자신감</dd></div><div><dt>권장 시간</dt><dd>프로그램별 상이</dd></div></dl></article>
-        <article class="course"><span class="course-number">02</span><h3>손끝 창의</h3><p>만지고 조작한 경험을 디지털 논리로 전환합니다. 과학·드론·업사이클 코딩 활동으로 창의성과 문제 해결력을 키웁니다.</p><dl><div><dt>추천 대상</dt><dd>학교 현장 및 학교 밖에 있는 초/중/고등학생, 전학년</dd></div><div><dt>기대 효과</dt><dd>관계형성 및 적응, 컴퓨팅사고력에 기반한 창작과 협업능력</dd></div><div><dt>권장 시간</dt><dd>프로그램별 상이</dd></div></dl></article>
-        <article class="course"><span class="course-number">03</span><h3>미래 설계</h3><p>자기이해를 바탕으로 다음 진로를 설계합니다. 강점 탐색과 직업 이해, 진로 로드맵 활동으로 미래를 구체화합니다.</p><dl><div><dt>추천 대상</dt><dd>구체적인 인생의 방향과 대안을 찾는 중/고등학생/대학생</dd></div><div><dt>기대 효과</dt><dd>진로로드맵과 구체적인 계획수립</dd></div><div><dt>권장 시간</dt><dd>회기당 2시간 이상 기본 4회기 참여형 교육</dd></div></dl></article>
+        <article class="course"><span class="course-number">01</span><h3>마음 성장</h3><p>또래관계놀이터와 사회성발달 집단상담을 통해 친구와의 관계를 이해하고, 자신의 생각을 안전하게 표현하는 연습을 합니다.</p><dl><div><dt>추천 대상</dt><dd>유아, 초등학생, 중학생</dd></div><div><dt>기대 효과</dt><dd>1:1 면담과 피드백 자신감</dd></div><div><dt>권장 시간</dt><dd>프로그램별 상이</dd></div></dl><a class="button ghost course-action" href="output/pdf/mind-growth/협동놀이를 통한 비폭력대화 통합교육 프로그램 운영계획서_김은정강사.pdf" target="_blank" rel="noopener" aria-label="마음 성장 과정 자료 보기">과정 자료 보기</a></article>
+        <article class="course"><span class="course-number">02</span><h3>손끝 창의</h3><p>업사이클링 팝업북 만들기(환경수업), 팝업코딩(STEAM), 교육용 드론 이론·실습, 팀별 프로젝트 기반 교육을 진행합니다.<br>팝업코딩(STEAM)에서는 팝업북과 종이접기 원리를 엔트리 코딩으로 구현합니다.</p><dl><div><dt>추천 대상</dt><dd>학교 현장 및 학교 밖에 있는 초/중/고등학생, 전학년</dd></div><div><dt>기대 효과</dt><dd>관계형성 및 적응, 컴퓨팅사고력에 기반한 창작과 협업능력</dd></div><div><dt>권장 시간</dt><dd>프로그램별 상이</dd></div></dl><a class="button ghost course-action" href="output/pdf/creative-hands/creative-hands.pdf" target="_blank" rel="noopener" aria-label="손끝 창의 과정 자료 보기">과정 자료 보기</a><a class="button ghost course-action" href="output/pdf/creative-hands/VR팝업북제작과정(제출용)_김은정.pdf" target="_blank" rel="noopener" aria-label="특수교육 VR 팝업북 제작 과정 자료 보기">특수교육 VR 팝업북 자료 보기</a></article>
+        <article class="course"><span class="course-number">03</span><h3>미래 설계</h3><p>심리 기반 진로 정체성 발달 수업과 로드맵 스케치를 진행합니다.<br>AI 도구활용(note-me) 자기 탐색, 진로직무탐색, 모의면접 프로그램으로 취업을 준비하는 특성화고등학교, 대학교 학생들의 취업 준비를 돕습니다.</p><dl><div><dt>추천 대상</dt><dd>구체적인 인생의 방향과 대안을 찾는 중/고등학생/대학생</dd></div><div><dt>기대 효과</dt><dd>진로로드맵과 구체적인 계획수립</dd></div><div><dt>권장 시간</dt><dd>회기당 2시간 이상 기본 4회기 참여형 교육</dd></div></dl><a class="button ghost course-action" href="output/pdf/future-design.pdf/성지중 2025여름방학 진로특강 원고용ppt.pptx.pdf" target="_blank" rel="noopener" aria-label="미래 설계 과정 자료 보기">과정 자료 보기</a></article>
       </div></div>
       <div class="wrap"><div class="custom" id="custom"><div><p class="eyebrow" style="color:#f2b98c">TAILORED FOR YOUR TEAM</p><h2>우리의 언어로<br>교육을 설계합니다.</h2><p class="lead">대표 과정과 맞춤 워크숍을 함께 제공합니다. 일회성 강의가 아니라 교육 이후의 실제 변화를 고려합니다.</p></div><div class="steps"><div class="step"><span>STEP 01</span><strong>목표를 함께 확인</strong><p>교육 배경과 기대하는 변화를 먼저 듣습니다.</p></div><div class="step"><span>STEP 02</span><strong>구성원을 고려해 조정</strong><p>연령, 인원, 시간, 사전 과제를 반영합니다.</p></div><div class="step"><span>STEP 03</span><strong>알맞은 방식으로 진행</strong><p>강의·사례 토론·참여형 워크숍 중 선택합니다.</p></div></div></div></div>
     </section>
-    <section class="download-section" id="download"><div class="wrap download"><div><h2>내부 검토에 바로 쓰실 수 있도록</h2><p>강사 프로필, 대표 과정, 대상 맞춤 설계 예시를 한 번에 담았습니다.</p></div><div class="actions"><button class="button js-pdf" type="button">소개 자료 열기</button><button class="button ghost js-pdf" type="button">PDF 내려받기</button></div></div></section>
+    <section class="download-section" id="download"><div class="wrap download"><div><h2>내부 검토에 바로 쓰실 수 있도록</h2><p>강사 프로필, 대표 과정, 대상 맞춤 설계 예시를 한 번에 담았습니다.</p></div><div class="actions"><a class="button js-pdf" href="output/pdf/kimeunjeong-education-introduction-2026.pdf" target="_blank" rel="noopener">소개 자료 열기</a><a class="button ghost js-pdf" href="output/pdf/kimeunjeong-education-introduction-2026.pdf" download="김은정_교육과정_학교사례_소개자료_2026.pdf">PDF 내려받기</a></div></div></section>
   </main>
   <footer><div class="wrap footer-inner"><p>© 2026 Kim Eunjeong. Corporate Learning Partner.</p><p>교육 문의 · hello@kimeunjeong.example</p></div></footer>
-  <div class="mobile-cta"><button class="button js-pdf" type="button">소개 자료 받기</button></div><div class="toast" role="status" aria-live="polite">소개 자료 PDF는 현재 준비 중입니다. 곧 연결될 예정입니다.</div>
-  <script>
-    const toast = document.querySelector('.toast'); let timer;
-    document.querySelectorAll('.js-pdf').forEach(el => el.addEventListener('click', event => { event.preventDefault(); toast.classList.add('show'); clearTimeout(timer); timer = setTimeout(() => toast.classList.remove('show'), 3200); }));
-  </script>
+  <div class="mobile-cta"><a class="button js-pdf" href="output/pdf/kimeunjeong-education-introduction-2026.pdf" target="_blank" rel="noopener">소개 자료 받기</a></div>
 </body>
 </html>
